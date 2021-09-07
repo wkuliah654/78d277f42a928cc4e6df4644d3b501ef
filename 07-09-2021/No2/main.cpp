@@ -64,6 +64,9 @@ void in() {
 		cout << "NIK : "; cin >> tiket.nik[tiket.num];
 		tiket.num++;
 	}
+	else {
+		cout << "Antrian telah penuh!!" << endl;
+	}
 }
 
 void out() {
@@ -75,15 +78,22 @@ void out() {
 		}
 		tiket.num--;
 	}
+	else {
+		cout << "Antrian kosong!!" << endl;
+	}
 }
 
 void view() {
 	int x;
 	if(!isEmpty()) {
+		cout << "Antrian tiket saat ini" << endl;
 		cout << "No - Nama - NIK" << endl;
 		for(x=0; x<tiket.num; x++) {
 			cout << x+1 << " - " << tiket.nama[x] << " - " << tiket.nik[x] << endl;
 		}
+	}
+	else {
+		cout << "Tidak ada antrian saat ini!!" << endl;
 	}
 }
 
