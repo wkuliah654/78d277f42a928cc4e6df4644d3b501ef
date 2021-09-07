@@ -1,1 +1,7 @@
-# 78d277f42a928cc4e6df4644d3b501ef
+# Latihan Soal C++
+
+
+
+dibuat 07/09/2021 Sidoarjo
+sumber soal Qalbi Teknik Komputer PENS
+by 113
